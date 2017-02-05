@@ -4,21 +4,30 @@ Simple sign up and login form with Two-factor Authentication using Authy (https:
 
 ## Installation
 
-Following commands has to be executed on both **server** and then on **client** folders.
+###Server
 
 Installing required modules.
 
 ```
 npm install
 ```
-```
-bower install
-```
 To start:
 ```
 gulp
 ```
+###Client
 
+Installing required modules.
+
+```
+npm install
+bower install
+```
+To start:
+```
+gulp clean
+gulp
+```
 ## Built With
 * [ExpressJS](http://expressjs.com/) - Server
 * [AngularJS](https://angularjs.org/) - Client
