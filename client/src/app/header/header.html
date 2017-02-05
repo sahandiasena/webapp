@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebApp</a>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+      <li class="active"><a href="#">Home</a></li>
+    </ul>
+    <span style="padding-top:15px; padding-bottom:15px; padding-right:15px;"
+          class="nav navbar-nav navbar-right">Welcome, {{vm.user.name}} |
+      <span ng-if="vm.loggedIn == true"><a ng-click="vm.logout()" href="#">Log Out</a></span>
+      <span ng-if="vm.loggedIn == false"><a ui-sref="register">Register</a></span>
+    </span>
+  </div>
+</nav>

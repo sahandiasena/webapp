@@ -1,0 +1,22 @@
+<div class="">
+  <h2>Verify</h2>
+  <form class="form-horizontal" name="verify" ng-submit="vm.verify()" role="form">
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="code">Verification Code</label>
+      <div class="col-sm-3">
+        <input type="text" name="code" id="code" class="form-control" ng-model="vm.login.code" required>
+        <span ng-show="verify.code.$dirty && login.verify.$error.required" class="help-block">Verification code is required.</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-4 col-sm-10">
+        <p><a href ng-click="vm.resend()">Resend my code!</a></p>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-4 col-sm-10">
+        <button type="submit" class="btn btn-primary" ng-disabled="login.$invalid">Verify</button>
+      </div>
+    </div>
+  </form>
+</div>
